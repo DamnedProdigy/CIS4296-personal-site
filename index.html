@@ -77,6 +77,11 @@
         .next a {
             color: rgb(33, 37, 41);
         }
+        #btnSystems {
+            text-align: center;
+            display: inline-block;
+            width: 35%;
+        }
     </style>
 </head>
 
@@ -172,20 +177,19 @@
         <div class="row w-100">
             <h5>Video Games</h5>
         </div>
-        <div class="row w-100 mb-4">
+        <div class="row w-100 mb-4 shadow p-4 mb-4 bg-white" >
             <p class="text-justify">
                 I absolutely love gaming. It's been one of my favorite hobbies ever since I was a child, it's alaways been in my blood.
                 My first ever console was the Sega Genesis. After that, I dived into the world of PlayStation, & many more as time went on.
-                Currently, I have an Xbox Series X, a PlayStation 5, & a Nintendo Switch, although the PS5 hogs most of my time whenever I'm
-                playing something. I love playing online the most, as I can connect with my friends in an instant. It's also a good way to keep
-                in contact with friends that are a bit of a distance away. If anyone sees this, my XBL & PSN tags are this: DamnedProdigy, if
-                you ever want to play :).
+                I love playing online the most, as I can connect with my friends in an instant. It's also a good way to keep in contact with 
+                friends that are a bit of a distance away. Below is a button, & when clicked, will show all of the the current systems I have. 
+                If anyone sees this, my XBL & PSN tags are this: DamnedProdigy, if you ever want to play :).
             </p>
         </div>
         <div class="row w-100">
             <h5>Friends</h5>
         </div>
-        <div class="row w-100 mb-4">
+        <div class="row w-100 mb-4 shadow p-4 mb-4 bg-white">
             <p class="text-justify">
                 I love to spend time with my friends. I always keep my Friday evenings free, as I do most of my homework over the weekends.
                 Friday nights are dedicated to doing anything my friends & I think of. It usually involves food, & something after it. This past
@@ -197,7 +201,7 @@
         <div class="row w-100">
             <h5>TV Shows/Movies/Music</h5>
         </div>
-        <div class="row w-100">
+        <div class="row w-100 shadow p-4 mb-4 bg-white">
             <p class="text-justify">
                 On days where I feel like doing absolutely nothing, I can always turn to some tv show/movie, or just chill & listen to music.
                 Currently, I'm planning on starting House of the Dragon whenever I have a good amount of time to kill. I was huge on Game of Thrones,
@@ -220,10 +224,14 @@
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
         </div>
+        <div class="btn-group">
+            <button class="btn"><a href="https://cis-iis2.temple.edu/Fall2021/CIS3344_tuk35668/Index.html">Client-Side Projects</a></button>
+            <button class="btn"><a href="https://cis-iis2.temple.edu/Spring2022/CIS3342_tuk35668/">Server-Side Projects</a></button>
+        </div>
         <div class="row w-100">
             <h5>Video Game Review (VGR) Website</h5>
         </div>
-        <div class="row w-100 mb-4">
+        <div class="row w-100 mb-4 shadow p-4 mb-4 bg-white">
             <p class="text-justify">
                 In my CIS 3342 class, I develped a video game review website with a partner. This website has the ability of having three different
                 account types (Publisher, Reviewer, & Consumer). A publisher is able to add a game, a reviewer is able to give their review on the game,
@@ -236,7 +244,7 @@
         <div class="row w-100">
             <h5>Capstone One Project</h5>
         </div>
-        <div class="row w-100 mb-4">
+        <div class="row w-100 mb-4 shadow p-4 mb-4 bg-white">
             <p class="text-justify">
                 Currently working in a group with three other individuals developing a solution for the Temple SBDC's front & backend system. This solution will
                 not only help w/ organization, but also eliminate the stress of dealing w/ the current system. So far, we've done a lot of paperwork, & are constantly
@@ -279,6 +287,32 @@
             </div>
             <div class="col text-center course">
                 <h5>Architecture, OS, & Networking</h5>
+            </div>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#btnSystems" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Systems"></i>
+            </a>
+        </div>
+        <button class="btn btn-secondary btn-outline" id="btnSystems" type="button" data-toggle="collapse" data-target="#hidSystems">My Game Consoles</button>
+        <div class="collapse" id="hidSystems">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center">Systems</h4>
+            </div>
+            <div class="row mx-auto">
+                <h5 class="display-5 mx-auto faded text-center mb-4">PC is neat, but I love my consoles.</h5>
+            </div>
+            <div class="container landing d-flex justify-content-center flex-column align-items-center">
+                <h5>System One:</h5>
+                <p>PlayStaion 5</p>
+                <h5>System Two:</h5>
+                <p>Xbox Series X</p>
+                <h5>System Three:</h5>
+                <p>Nintendo Switch (OLED Model)</p>
+                <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#hidSystems">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
         </div>
         <div class="row mt-5 next">
